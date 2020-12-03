@@ -152,6 +152,18 @@
             }
         }
     }
+    .map_content {
+        position: relative;
+        a {
+            display: block;
+            position: relative;
+
+            iframe {
+                position: relative;
+                z-index: -1;
+            }
+        }
+    }
 }
 
 .sign_up_section{
@@ -373,9 +385,17 @@
             color:#fff;
             span{
                 margin-right:30px;
+                vertical-align: middle; 
+                font-size: 20px;
+                padding-top: 2px;
             }
             a{
                 margin-right:20px;
+                display: inline-block;
+
+                img {
+                    height: 25px;
+                }
             }
         }
     }

@@ -1,5 +1,5 @@
 .blue{
-    color: $color-secondary;
+    color: $color-primary;
 }
 
 .white{
@@ -217,7 +217,7 @@
     padding:12px 28px;
     margin:0;
     &:hover{
-        background: $color-secondary;
+        background: $color-primary;
         color:$color-white;
 
         .iblack {
@@ -229,7 +229,7 @@
         background:$color-purple;
         color:$color-white;
         &:hover{
-            background:$color-secondary;
+            background:$color-primary;
         }
     }
     &.with_icon{
@@ -238,7 +238,7 @@
         span{padding-top:2px;}
     }
     &.green{
-        background:$color-secondary;
+        background:$color-primary;
         color:$color-white;
         &:hover{
             background: $color-white;
@@ -290,7 +290,7 @@
     height: 58px;
     border-radius: 3px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
-    background-color: $color-secondary;
+    background-color: $color-primary;
     border:none;
     cursor: pointer;
     color: $color-white;

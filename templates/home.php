@@ -144,15 +144,19 @@
                     <p><strong>Interested in turning one of our pups into a member of your family? Come and visit us at our facility!</strong></p>
 					
                     <ul>
-                        <li><img src="<?php echo MBN_ASSETS_URI ?>/img/icons/pin.svg" alt="Location" /> <a href="https://goo.gl/maps/rZX9kzgFHt4La9u49" target="_blank"><strong>2601 E Indian School Road</strong></a></li>
+                        <li><img src="<?php echo MBN_ASSETS_URI ?>/img/icons/pin.svg" alt="Location" /> 
+                        <a href="https://www.google.com/maps/dir//2611+E+Indian+School+Rd,+Phoenix,+AZ+85016,+USA/@33.4955087,-112.0297084,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872b0d9fdb75ddfd:0xf7a817e3cc5e93a4!2m2!1d-112.0255768!2d33.4945761" target="_blank">
+                            <strong>2611 E Indian School Road</strong></a></li>
                         <li><img src="<?php echo MBN_ASSETS_URI ?>/img/icons/clock.svg" alt="Office Hours" /> <strong>Weekdays from 11am-8pm and weekends from 8:00am-8:00pm</strong></li>
                     </ul>
 
 
                 </div>
                 <div class="cell large-6 map_content">
+                    <a href="https://www.google.com/maps/dir//2611+E+Indian+School+Rd,+Phoenix,+AZ+85016,+USA/@33.4955087,-112.0297084,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872b0d9fdb75ddfd:0xf7a817e3cc5e93a4!2m2!1d-112.0255768!2d33.4945761" target="_blank">
                     <!-- <iframe src="https://snazzymaps.com/embed/265816" width="100%" height="750px" style="border:none;"></iframe> -->
                         <iframe src="https://snazzymaps.com/embed/271250" width="100%" height="420px" style="border:none;"></iframe>    
+                    </a>
                 </div>
             </div>
         </div>

@@ -90,7 +90,7 @@
     margin:0;
 
     a {
-        background: $color-secondary;
+        background: $color-primary;
         color: $color-white;
         display: inline-block;
         line-height: 26px;
@@ -139,7 +139,7 @@
 }
 
 .wp-block-button__link {
-    background: $color-secondary;
+    background: $color-primary;
     display: inline-block;
     color: $color-white;
     line-height: 26px;
@@ -368,7 +368,7 @@ ul.circle, ul.circle_list {
                     opacity: 0;
     
                     &:checked + label:before {
-                        background: $color-secondary;
+                        background: $color-primary;
                     }
                 }
                 label {
@@ -437,7 +437,7 @@ ul.circle, ul.circle_list {
 
     h2 {
         margin-bottom: 25px;
-        color: $color-secondary;
+        color: $color-primary;
     }
 
     .button-a a {
@@ -774,7 +774,7 @@ ul.circle, ul.circle_list {
             a {
                 font-size: 22px;
                 font-weight: bold;
-                color: $color-secondary;
+                color: $color-primary;
                 line-height: 1;
                 padding:15px 15px 15px 0;
 
@@ -842,7 +842,7 @@ ul.circle, ul.circle_list {
                     left: 0;
                     width: 10px;
                     height: 10px;
-                    border:2px solid $color-secondary;
+                    border:2px solid $color-primary;
                     border-radius: 50%;
                     top:9px;
                 }
@@ -1001,13 +1001,13 @@ ul.circle, ul.circle_list {
 
 /* Portal Page Start */
 .sec_portal {
-    background: $color-green;
+    background: $color-greyhound;
     color: $color-white;
     padding:110px 0 80px;
     text-align: center;
 
     a {
-        color: $color-secondary;
+        color: $color-primary;
     }
 
     p {
@@ -1017,7 +1017,7 @@ ul.circle, ul.circle_list {
     h4 {
         font-size: 43px;
         margin-bottom: 40px;
-        color: $color-secondary;
+        color: $color-primary;
 
         span {
             color: $color-white;
@@ -1408,7 +1408,7 @@ ul.circle, ul.circle_list {
         margin-bottom:60px;
 
         .button {
-            background:$color-secondary;
+            background:$color-primary;
             color: $color-white;
             display:inline-flex !important;
             align-items:center;
@@ -1476,7 +1476,7 @@ ul.circle, ul.circle_list {
             }
 
             .gf_step_active {
-                color: $color-secondary;
+                color: $color-primary;
 
                 &:before {
                     content: "";
