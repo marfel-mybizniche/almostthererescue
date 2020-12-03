@@ -15,14 +15,14 @@ input[type=submit]{
     font-size:16px;
     letter-spacing:1.6px;
     color:$color-primary;
-    border:solid 2px $color-secondary !important;
+    border:solid 2px $color-primary !important;
     padding:18px 40px;
     text-transform: uppercase;
     background:transparent;
     outline: 0;
     cursor:pointer;
     &:hover{
-        background:$color-secondary;
+        background:$color-primary;
         color:$color-white;
     }
 }
@@ -85,9 +85,11 @@ input[type="email"]{
     box-shadow:none!important;
     padding:18px 20px;
     color: $color-textfield-gray;
-    font-size:18px;
+    font-size:16px;
+    font-family: $button-font-family;
     position: relative;
     z-index: 9;
+    letter-spacing: 1.6;
 }
 
 

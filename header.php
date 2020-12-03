@@ -7,6 +7,8 @@
 
     <?php wp_head() ?>
 
+    <link rel="stylesheet" href="https://use.typekit.net/euu0diq.css">
+
 </head>
 <body <?php body_class() ?>>
 

@@ -105,6 +105,7 @@
         display: inline-flex;
         min-height: 57px;
         align-items: center;
+        letter-spacing: 1.6px;
 
         &:hover {
             background: $color-black;
@@ -758,7 +759,7 @@ ul.circle, ul.circle_list {
             top:0;
             bottom: 0;
             right: 0;
-            background: $color-green;
+            background: $color-primary;
             z-index: -1;
         }
     }
@@ -774,7 +775,7 @@ ul.circle, ul.circle_list {
             a {
                 font-size: 22px;
                 font-weight: bold;
-                color: $color-primary;
+                color: $color-secondary;
                 line-height: 1;
                 padding:15px 15px 15px 0;
 
@@ -792,7 +793,7 @@ ul.circle, ul.circle_list {
                     position: absolute;
                     right: -10px;
                     top: 15px;
-                    background: $color-green;
+                    background: $color-primary;
                     width: 20px;
                     height: 20px;
                     transform: rotate(45deg);

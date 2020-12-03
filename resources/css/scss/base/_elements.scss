@@ -10,14 +10,13 @@ img{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-weight: bold;
+    font-weight: normal;
     font-family: $heading-font-family;
 }
 
 h1{
     font-size: 46px;
     line-height: 1.4;
-    font-weight: 700;
 }
 
 h2{
@@ -32,7 +31,6 @@ h2{
 h3{
     font-size:36px;
     line-height: 1.2;
-    font-weight:700;
     color: $color-darker;
 }
 
@@ -46,10 +44,9 @@ h4{
 }
 
 h5{
-    color:$color-secondary;
+    color:$color-primary;
     font-size:22px;
     line-height:1;
-    font-weight:700;
 }
 
 h6 {
