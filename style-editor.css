@@ -1,0 +1,132 @@
+/** === Custom Block Editor === */
+body {
+    /* background: #fcfcfc */
+}
+
+.wp-block-group {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.wp-block-group:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border:1px dashed #ccc;
+}
+
+
+/* Main column width */
+.wp-block {
+    width: 95%;
+    max-width: 100%;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    width: 95%;
+    max-width: 100%;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    width: 95%;
+    max-width: 100%;
+}
+
+
+.wp-block-media-text p {
+	font-size:16px !important;
+}
+
+
+.components-placeholder {
+    min-height: 1px;
+}
+
+.grid-xy .block-editor-block-list__layout {
+    flex-wrap: wrap !important;
+}
+.grid-xy .block-editor-block-list__layout > * {
+    flex-basis: 30% !important;
+    margin: 3% 1% !important;
+}
+
+.two-columns {
+    column-count: 2;
+}
+
+
+.sec_banner {
+    text-align:center;
+}
+
+.logo_list ul li {
+    width: 15% !important;
+}
+.logo_list img {
+    object-fit: none;
+    width: auto !important;
+    height: auto !important;
+    margin:0 auto;
+}
+.logo_list figure {
+    display: block;
+    text-align: center;
+}
+.logo_list figure figcaption {
+    
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+
+.button-a a, .wp-block-button__link {
+    background: #348f41;
+    display: inline-block;
+    color: #222;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 110px;
+    margin: 0 0 20px;
+    text-decoration: none;
+}
+.button-a a:hover, .wp-block-button__link:hover {
+    background: #6d9f0f;
+}
+
+.btn-icon {
+    background: #348f41;
+    color: #222;
+    padding: 8px 30px 8px 25px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 57px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+.btn-icon small {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.btn-icon img {
+    margin-right: 10px;
+    max-width: 38px;
+    max-height: 38px;
+}
+
+.wp-block-cover__inner-container {
+    color: #000;
+}

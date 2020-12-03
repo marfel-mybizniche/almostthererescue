@@ -1,0 +1,186 @@
+/*
+** Theme Name: Mybizniche
+** Theme URI: https://mybizniche.com/
+** Author: Mybizniche
+** Author URI: https://mybizniche.com/
+** Version: 1.0
+*/
+
+.home .hero {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.home .hero .bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+}
+.hero-s6 .bg video {
+	height:100%;
+	width: 100%;
+	object-fit:cover;
+}
+section.hero .hero-caption {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+section.hero .hero-caption h1 {
+	color: #fff;
+}
+
+div.sec_banner .button-a a img {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+div.sec_donate .donate_steps .field_amount.gfield ul.gfield_radio li {
+	padding-top: 270px !important;
+	margin-bottom: 20px;
+	
+}
+div.sec_donate .donate_steps .field_amount.gfield ul.gfield_radio li::after {
+	top: 162px;
+	height: 100px;
+	padding: 10px;
+	font-size: 14px;
+	position: absolute;
+	background: #f5f5f5;
+	color: #000;
+	opacity:1;
+}
+
+.mt--10 {
+	margin-top:-10px;
+}
+
+div.map_section {
+	border-bottom-width:10px;
+}
+div.map_section .text_content {
+	padding-bottom:90px;
+}
+
+a.button.primary {
+	color:#fff;
+}
+.button-a img.invert-0{
+	-webkit-filter: invert(0);
+	filter: invert(0);
+}
+.button-a img.invert-1{
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+div.ig_feed {
+	background: #fafafa;
+}
+
+.online_scheduler {
+	overflow:hidden;
+}
+.online_scheduler iframe {
+	margin-bottom:-110px;
+	width: 98%;
+}
+.footer_contact_wrapper h2 {
+	text-align:center;
+}
+div.footer_contact_wrapper .footer_logo {
+	margin-bottom:0;
+}
+div.footer_contact_wrapper {
+	padding-top: 45px;
+}
+
+.atr_cover {
+	padding: 40px;
+}
+.atr_cover + .atr_cover {
+	margin-top:40px;
+}
+.atr_cover p:empty {
+	display:none;
+}
+.atr_media {
+	display:flex;
+	flex-flow: wrap;
+} 
+.atr_media a {
+	text-decoration:underline;
+	font-weight:bold;
+}
+.atr_media > figure {
+	padding-right:30px;
+	text-align: center;
+	width: 30%;
+}
+.atr_media > div {
+	align-self: center;
+	width: 68%;
+}
+.atr_media > div > *:last-child {
+	margin-bottom:0;
+}
+
+#sb_instagram #sbi_load {
+	display:none;
+}
+
+.button.no_invert img {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+
+.button.no_invert img.hovered_img{display:none;}
+.button.no_invert:hover img{display:none;}
+.button.no_invert:hover img.hovered_img{display:inline-block;}
+
+
+/**
+ * Brick section
+ */
+.buy_brick{
+    margin-bottom:100px;
+    border:solid 1px #d1d1d1;
+    padding:35px;
+}
+.brick_blocks img{width:100%;}
+.brick_blocks{padding:15px;}
+
+.brick_btn a{
+    background-image:url('assets/img/icons/brick_icon.svg') !important;
+    background-repeat:no-repeat !important;
+    background-position: 25px !important;
+    padding-left: 65px;
+}
+
+.col_2{column-count:2;}
+
+@media (max-width:1023px) {
+	.hsnav-s11.sticky {
+		top:0 !important;
+	}
+}
+
+@media (max-width:639px) {
+    
+    .buy_brick .col_2{column-count:1;}
+    
+	.atr_cover {
+		padding: 30px 20px;
+	}
+	.atr_media > figure {
+		width:100%;
+		padding:0 0 15px;
+	}
+	.atr_media > div {
+		width:100%;
+	}
+}
+

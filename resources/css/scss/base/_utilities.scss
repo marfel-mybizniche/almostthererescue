@@ -1,0 +1,58 @@
+.fw-extralight{ font-weight: 200 !important }
+.fw-light{ font-weight: 300 !important }
+.fw-regular{ font-weight: 400 !important }
+.fw-medium{ font-weight: 500 !important }
+.fw-semibold{ font-weight: 600 !important }
+.fw-bold{ font-weight: 700 !important }
+.fw-extrabold{ font-weight: 800 !important }
+.fw-black{ font-weight: 900 !important }
+
+.tc-primary{ color: $color-primary !important }
+.tc-secondary{ color: $color-secondary !important }
+.tc-dark{ color: #222 !important }
+.tc-white{ color: #fff !important }
+
+.td-underline{ text-decoration: underline !important }
+
+.bc-primary{ background-color: $color-primary !important }
+.bc-secondary{ background-color: $color-secondary !important }
+.bc-dark{ background-color: $color-dark !important }
+
+.full-h{ min-height: 100vh }
+.has-text-align-center{text-align: center;}
+.text-large{ font-size: 26px }
+.iBlock{ display:inline-block; vertical-align: middle; }
+.white_text{ color:$color-primary; }
+@for $i from 1 through 20{
+    .order-#{$i}{
+        order: #{$i} !important;
+    }
+}
+
+
+#hidden-content{
+    max-width:100%;
+    width:1024px;
+}
+
+
+/* Mobile to Desktop
+**************************/
+@include media(min-width, 1024px){
+    @for $i from 1 through 20{
+        .order-lg-#{$i}{
+            order: #{$i} !important;
+        }
+    }
+}
+
+
+/* Desktop to Mobile
+**************************/
+@include media(max-width, 1536px){
+    .text-large{ font-size: 24px }
+}
+
+@include media(max-width, 1023px){
+    .text-large{ font-size: 21px }
+}

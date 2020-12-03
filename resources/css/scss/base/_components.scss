@@ -1,0 +1,322 @@
+.blue{
+    color: $color-secondary;
+}
+
+.white{
+    color: $color-white;
+}
+
+.section_relative{
+    position:relative;
+}
+
+.arrow-button,
+.write-button{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    color: $color-grey;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transition: 0.3s ease all;
+    }
+}
+.arrow-button{
+    padding-right: 30px;
+
+    &:before{
+        width: 24.7px;
+        height: 21.2px;
+        right: 0;
+        background-image: url("../img/icn-arrow.svg");
+    }
+
+    &:hover:before{
+        right: -6px;
+    }
+}
+.write-button{
+    padding-left: 35px;
+
+    &:before{
+        width: 23px;
+        height: 26px;
+        left: 0;
+        background-image: url("../img/icn-write.svg");
+    }
+
+    &:hover:before{
+        left: -6px;
+    }
+}
+
+.signature{
+    font-family: 'Darto';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contact-info{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    & > li{
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+        color: $color-grey;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:before{
+            content: '';
+            display: block;
+            width: 31.6px;
+            height: 31.6px;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        &.pin{
+            padding-left: 38px;
+            
+            &:before{
+                top: -5px;
+                background-image: url(../img/icn-pin.svg);
+            }
+        }
+
+        &.phone{
+            padding-left: 38px;
+            
+            &:before{
+                top: -3px;
+                background-image: url(../img/icn-call.svg);
+            }
+        }
+
+        &.calendar{
+            padding-left: 38px;
+            
+            &:before{
+                top: -3px;
+                background-image: url(../img/icn-calendar.svg);
+            }
+
+            .badge{
+                width: 210px;
+                max-width: 100%;
+                min-height: 26px;
+                border-radius: 23px;
+                background-color: $color-dark;
+                text-align: center;
+                padding: 5px;
+                margin-left: 10px;
+                display: inline-block;
+            }
+        }
+
+        a{
+            color: $color-grey;
+        }
+    }
+}
+
+
+.social-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+    li{
+        text-transform: uppercase;
+        margin-right: 15px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        a{
+            color: $color-dark;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.subscribe-form{
+    h4{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.56;
+        color: $color-grey;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .input-group{
+        input, button{
+            background: $color-white;
+            border-color: #d1d1d1;
+            box-shadow: none;
+            padding: 15px;
+            height: auto;
+        }
+
+        input{
+            border-right-width: 0;
+        }
+
+        .button{
+            color: rgba(51, 51, 51, 0.08);
+            border-left-width: 0;
+
+            span{
+                color: #b0b0b0;
+                vertical-align: top;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
+.button{
+    background:$color-white;
+    color:$color-black;
+    font-size:16px;
+    font-weight:900;
+    text-transform: uppercase;
+    border-radius:110px;
+    padding:12px 28px;
+    margin:0;
+    &:hover{
+        background: $color-secondary;
+        color:$color-white;
+
+        .iblack {
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+        }
+    }
+    &.purple{
+        background:$color-purple;
+        color:$color-white;
+        &:hover{
+            background:$color-secondary;
+        }
+    }
+    &.with_icon{
+        img,span{display:inline-block;vertical-align: middle;}
+        img{margin-right:20px;}
+        span{padding-top:2px;}
+    }
+    &.green{
+        background:$color-secondary;
+        color:$color-white;
+        &:hover{
+            background: $color-white;
+            color: $color-black;
+
+            img {
+                -webkit-filter: none;
+                filter: none;
+            }
+        }
+
+        img {
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+        }
+    }
+}
+
+
+.slick-slider{
+    .slick-arrow{
+        text-indent: 999px;
+        overflow: hidden;
+        width: 20px;
+        height: 35px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+        outline: none;
+
+        &.slick-prev{
+            left: 35px;
+            background-image: url(../img/icons/icn-angle-left.svg);
+        }
+
+        &.slick-next{
+            right: 35px;
+            background-image: url(../img/icons/icn-angle-right.svg);
+        }
+    }
+}
+
+.submit-shadow{
+    width: 100%;
+    height: 58px;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: $color-secondary;
+    border:none;
+    cursor: pointer;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 4.2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.button-circ-down{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.25);
+    background: $color-white url(../img/icn-arrow-down.png) no-repeat center;
+    border-radius: 50%;
+    display: inline-block;
+    border: 0;
+    overflow: hidden;
+    text-indent: 999px;
+
+
+    @include media(max-width, 1023px){
+        width: 35px;
+        height: 35px
+    }
+}

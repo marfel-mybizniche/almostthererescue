@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.657" height="23.694" viewBox="0 0 26.657 23.694">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="buy_a_brick" transform="translate(0 -18.785)">
+        <g id="Group_890" transform="translate(0 18.785)">
+            <g id="Layer_5_51_">
+                <g id="Group_889">
+                    <path id="Path_4034" d="M20.228 30.821a2.681 2.681 0 0 1-1.69.725H6.564c-.55 0-.69-.326-.311-.725L17.025 19.51a2.682 2.682 0 0 1 1.69-.725h11.974c.55 0 .69.326.311.725z" class="cls-1" transform="translate(-5.563 -18.785)"/>
+                    <path id="Path_4035" d="M13.985 204.646a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-7.722a1 1 0 0 1 1-1h11.985a1 1 0 0 1 1 1z" class="cls-1" transform="translate(0 -181.952)"/>
+                    <path id="Path_4036" d="M201.3 47.819a3.135 3.135 0 0 1-.657 1.757l-10.374 11.993c-.36.416-.655.306-.655-.244v-7.713a2.884 2.884 0 0 1 .691-1.724l10.323-10.812c.38-.4.69-.273.688.277z" class="cls-1" transform="translate(-174.659 -39.103)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

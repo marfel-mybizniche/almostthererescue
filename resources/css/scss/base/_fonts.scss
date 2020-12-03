@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Darto';
+    src: url('../fonts/Darto.woff2') format('woff2'),
+        url('../fonts/Darto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darto Sans';
+    src: url('../fonts/DartoSans.woff2') format('woff2'),
+        url('../fonts/DartoSans.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darto Sans';
+    src: url('../fonts/DartoSans.woff2') format('woff2'),
+        url('../fonts/DartoSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darto';
+    src: url('../fonts/Darto.woff2') format('woff2'),
+        url('../fonts/Darto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ICONS
+******************/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?bqwbo7');
+    src:  url('../fonts/icomoon.eot?bqwbo7#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?bqwbo7') format('truetype'),
+      url('../fonts/icomoon.woff?bqwbo7') format('woff'),
+      url('../fonts/icomoon.svg?bqwbo7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  
+.icon-account:before {
+  content: "\e902";
+}
+.icon-shopping-bag:before {
+  content: "\e906";
+}
+.icon-pin:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-pinterest:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e909";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-arrow-up:before {
+  content: "\ea3a";
+}
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+.icon-arrow-down:before {
+  content: "\ea3e";
+}
+.icon-arrow-left:before {
+  content: "\ea40";
+}

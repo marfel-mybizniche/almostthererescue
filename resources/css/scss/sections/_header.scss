@@ -1,0 +1,423 @@
+
+/* Header Sticky Nav Style 11 */
+header {
+	position: relative;
+	z-index: 9999;
+	
+	&.overlap {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 999;
+
+		.hsnav-s11 {
+			background: $color-white;
+			box-shadow: none;
+		}
+	}
+	.hsnav-s11 {
+		background: $color-white;
+		max-width: none !important;
+		
+		&.sticky {
+			position: absolute;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&.is-stuck {
+			position: fixed;
+			background: $color-white;
+			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+		}
+
+		
+		.navbar {
+			position: relative;
+			//min-height: 110px;
+
+			.logo, .navlogo {
+				position: absolute;
+                top: 8px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 250px;
+                height: 120px;
+                padding: 0;
+                line-height: 80px;
+                overflow: hidden;
+			}
+
+			.navmenu {
+				position: relative;
+
+				 ul {
+					width: 100%;
+					margin: 0;
+					flex-flow: nowrap;
+
+					.submenu {
+						min-width: 200px;
+					}
+				}
+
+				a {
+					font-size: 16px;
+					font-weight: bold;
+					text-transform: uppercase;
+					padding: 20px 20px;
+					line-height: 1;
+					color: $color-grey;
+					white-space: nowrap;
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+
+				.is-dropdown-submenu-parent {
+					> a {
+						&:after {
+							border:0;
+							border-right: 2px solid;
+							border-bottom: 2px solid;
+							width: 8px;
+							height: 8px;
+							transform: rotate(45deg);
+							right: 20px;
+							margin-top: -6px;
+
+							position: static;
+							display: inline-block;
+							vertical-align: middle;
+							margin: -5px 0 0 10px;
+						}
+					}
+				}
+
+				.submenu {
+					padding: 10px 0;
+					li {
+						display: block;
+						a {
+							padding: 15px 20px;
+						}
+					}
+				}
+
+			}
+
+			.navleft {
+				float: left;
+				width: calc(50% - 170px);
+				display: flex;
+				align-items: center;
+				//height: 110px;
+				flex-flow: wrap;
+			}
+			
+			.navright {
+				float: right;
+				width: calc(50% - 170px);
+				display: flex;
+				justify-content: end;
+				align-items: center;
+				//height: 110px;
+				flex-flow: wrap;
+				text-align: right;
+			}
+
+
+			.navicon {
+				width: 55px; 
+				height: 55px; 
+				position: relative;  
+				font-size: 0; 
+				cursor: pointer; 
+				display: inline-block;
+				vertical-align: middle;
+                z-index: 99999;
+                border-radius: 50%;
+                margin:10px 10px 10px 0;
+                border:2px solid lighten($color-black, 12.5%); 
+
+				&:before {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid lighten($color-black, 12.5%); 
+					border-bottom: 3px solid lighten($color-black, 12.5%); 
+					left: 14px; 
+					top: 15px; 
+					width: 25px; 
+					height: 12px; 
+					transition: all 0.5s ease;
+				}
+				&:after {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid lighten($color-black, 12.5%); 
+					left: 14px; 
+					top: 33px; 
+					width: 22px; 
+					transition: all 0.5s ease;
+				}
+				@at-root header.show-menu .hsnav-s11 .navicon {
+                    border-color: $color-white;
+                    
+					&:before {
+						box-shadow: none; 
+						left: 14px; 
+						top: 24px; 
+						height: 3px; 
+						transform: rotate(-45deg); 
+                        border-bottom: 0; 
+                        border-color: $color-white;
+					} 
+					&:after {
+						width: 25px; 
+						left: 14px; 
+						top: 24px; 
+						transform: rotate(45deg);
+                        border-color: $color-white;
+					}
+				}
+
+			}		
+
+			.mobmenu {
+				position: fixed;
+				top: -100vh;
+				height: 100vh;
+				left: 0;
+				right: 0;
+				transition:all 0.5s ease;
+				overflow: auto;
+                background: $color-darker;
+                text-align: center;
+                padding: 25px 0 0;
+                overflow: auto;
+
+                .menu-mobile-menu-container {
+                    min-height: calc(100vh - 351px);
+                }
+
+				ul {
+					display: block;
+					margin: 0;
+					padding:10px 0; 
+					width: 100%;
+
+					li {
+						display: block;
+						margin: 0;
+
+						a {
+							font-size: 16px; 
+							line-height: 1.1; 
+							font-weight: bold; 
+							color: $color-white; 
+							text-transform: uppercase; 
+							padding:12px; 
+                            position: relative;
+                            margin:0;
+                            display: inline-block;
+
+							&:before {
+								position: absolute; 
+								left: 25px; 
+								top:50%; 
+								margin-top:-22px; 
+                            }
+                            
+						}
+						ul {
+							margin: 0;
+							padding: 10px 0;
+							li {
+								a {
+									text-transform: none; 
+                                    font-weight: normal;
+                                    color: darken($color-white, 15%); 
+                                    padding: 5px 10px;
+								}
+							}
+						}
+					}
+				}
+
+				.submenu-toggle {
+					width:40px; 
+					height: 40px; 
+					right: auto;
+					&:after {
+                        content: "+";
+                        border:0;
+                        color: $color-white;
+                        width: auto;
+                        height: auto;
+                        margin-left: -15px;
+					}
+
+					&[aria-expanded="true"] {
+                        &:after {
+                            content: "\2212";
+                            font-weight: bold;
+                        }
+					}
+				}
+				
+				@at-root header.show-menu .hsnav-s11 .mobmenu {
+					display: block;
+					top:0;
+				}
+
+            }
+            
+            .moblogo {
+                display: inline-block;
+            }
+
+            .mobinfo {
+                ul {
+                    margin:0;
+                    padding:0;
+
+                    li {
+                        list-style: none;
+                    }
+                }
+                
+                .phone {
+                    a {
+                        font-size: 19px;
+                        img {
+                            margin-right: 15px;
+                            width: 27px;
+                        }
+                    }
+                }
+
+                .email {
+                    a {
+                        font-size: 19px;
+                        color: $color-secondary;
+                        text-transform: none;
+
+                        img {
+                            margin-right: 10px;
+                            width: 29px;
+                        }
+                    }
+                }
+
+                .social {
+                    h5 {
+                        color:$color-white;
+                        font-size: 16px;
+                        text-transform: uppercase;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        a {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .contact {
+                    a {
+                        background: $color-primary;
+                        display: block;
+                        padding: 18px 20px;
+                    }
+                }
+            }
+
+			@include media(max-width, 1366px) {
+
+				.navmenu {
+					a {
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+				}
+
+				.navutil {
+					margin: 0 15px 0 0;
+				}
+
+
+			}
+
+			@include media(max-width, 1023px) {
+
+				min-height: 56px;
+
+				.logo, .navlogo {
+					height: 120px;
+					line-height: 60px;
+				}
+				
+				.navicon {
+					float: right;
+				}
+				
+			}
+		}
+
+	}
+}
+
+
+header .hsnav-s11 .navbar .navleft.navmenu{
+    a{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    ul.sub-menu{
+        min-width:180px;
+        display:none;
+        > li{
+            > a{
+                font-size:16px;
+                text-transform: none;
+                padding:7px 25px;
+            }
+        }
+    }
+
+    li.is-active > ul.sub-menu{
+        display:block;
+    }
+    
+    .is-dropdown-submenu{
+        border:none;
+    }
+}
+
+.phone_nav{
+    a{
+        &::before{
+            background-image:url('../img/icons/icon_phone.svg');
+            background-repeat:no-repeat;
+            background-position: center;
+            padding-left:30px;
+            content:'';
+        }
+    }
+}
+
+.btn_nav{
+    > a{
+        background:$color-primary;
+        color:#fff !important;
+        &:hover{
+            color:#fff !important;
+            background:$color-secondary;
+        }
+    }
+}

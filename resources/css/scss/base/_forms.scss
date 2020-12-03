@@ -1,0 +1,114 @@
+input[type=text], input[type=password],
+input[type=email], input[type=tel],
+input[type=number], select, textarea{
+    height: 60px;
+    border: solid 1px #d1d1d1;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+textarea{
+    height: auto;
+}
+
+input[type=submit]{
+    font-weight:500;
+    font-size:16px;
+    letter-spacing:1.6px;
+    color:$color-primary;
+    border:solid 2px $color-secondary !important;
+    padding:18px 40px;
+    text-transform: uppercase;
+    background:transparent;
+    outline: 0;
+    cursor:pointer;
+    &:hover{
+        background:$color-secondary;
+        color:$color-white;
+    }
+}
+
+.wpcf7-not-valid-tip{
+    font-size:12px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+    font-size: 12px;
+}
+
+.wpcf7 form .wpcf7-response-output{
+    color:#fff !important;
+    padding:15px;
+    font-size: 12px !important;
+}
+
+.button{
+    font-weight: 500;
+
+    &.secondary:hover,
+    &.secondary:focus{
+        color: #fff;
+    }
+}
+
+.action-buttons{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    
+    legend{
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-dark;
+        margin-bottom: 22px;
+    }
+
+    .grid-padding-x{
+        margin-left: -8px;
+        margin-right: -8px;
+        
+        .cell{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+    
+input[type="text"],
+input[type="phone"],
+input[type="email"]{
+    border: solid 1px $color-border-gray;
+    background-color: $color-white;
+    height: 60px;
+    box-shadow:none!important;
+    padding:18px 20px;
+    color: $color-textfield-gray;
+    font-size:18px;
+    position: relative;
+    z-index: 9;
+}
+
+
+textarea {
+    border: solid 1px $color-border-gray;
+    background-color: $color-white;
+    resize: none;
+    box-shadow:none!important;
+    padding:20px;
+    color: $color-textfield-gray;
+    font-size:18px;
+}
+select {
+    border: solid 1px $color-border-gray;
+    background-color: $color-white;
+    height: 60px;
+    box-shadow:none!important;
+    padding:10px 20px;
+    color: $color-textfield-gray;
+}
+
+ul.gform_fields{
+    margin:0;
+}
