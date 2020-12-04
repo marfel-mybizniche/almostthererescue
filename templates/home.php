@@ -191,12 +191,12 @@
                     <div class="grid-x align-center">
                         <div class="cell medium-8 amazon_wishlist_content">
 
-                            <p><img src="<?php echo MBN_ASSETS_URI ?>/img/wishlist-amazon.png" alt="Wishlist" /></p>
+                            <p><a href="https://www.amazon.com/gp/registry/wishlist/1OARMMRA4QUBB"><img src="<?php echo MBN_ASSETS_URI ?>/img/wishlist-amazon.png" alt="Wishlist" /></a></p>
                     
                             <p>Click here to see our Amazon Wishlist where you can purchase items we desperately need from Amazon.com and have it shipped directly to Almost There Rescue. We appreciate your support!</p>
 
                             <p>
-                                <a href="https://www.amazon.com/gp/registry/wishlist/1OARMMRA4QUBB?pldnSite=1" targe="_blank" class="button with_icon green" target="_blank">
+                                <a href="https://www.amazon.com/gp/registry/wishlist/1OARMMRA4QUBB" targe="_blank" class="button with_icon green" target="_blank">
                                     <img src="<?php echo MBN_ASSETS_URI ?>/img/icons/icon_shop.svg" alt="Shop Our Wishlist" /> 
                                     <span>Shop Our Wishlist</span>
                                 </a>
